@@ -1,25 +1,11 @@
-// TicTacToe
-// UC1: Initializes and displays an empty Tic-Tac-Toe board in a proper
-// grid format. This use case introduces 2D arrays, nested loops,
-// and formatted console output.
-
 public class TicTacToe {
 
     static char[][] board = new char[3][3];
 
-    /*
-     * Entry point of the program. It initializes the board and prints
-     * the empty grid on the console.
-     */
     public static void main(String[] args) {
         initializeBoard();
         printBoard();
     }
-
-    /*
-     * Initializes the 3x3 board by filling each cell with '-' to indicate
-     * an empty position. Standard should focus on correct nested loops.
-     */
     static void initializeBoard() {
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 3; col++) {
@@ -27,11 +13,6 @@ public class TicTacToe {
             }
         }
     }
-
-    /*
-     * Prints the Tic-Tac-Toe board using horizontal and vertical separators
-     * to make the grid structure visually visible to the users.
-     */
     static void printBoard() {
         System.out.println("-------------");
         for (int row = 0; row < 3; row++) {
